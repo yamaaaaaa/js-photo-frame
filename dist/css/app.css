@@ -1,3 +1,25 @@
 body {
   font-size: 12px;
 }
+
+.view {
+  position: relative;
+  margin: 0 0 3em 0;
+  height: 480px;
+}
+
+#camera {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#btn {
+  border: solid 1px #ccc;
+}

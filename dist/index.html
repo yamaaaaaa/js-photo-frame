@@ -4,31 +4,23 @@
 	<meta charset="UTF-8">
 	<title>js-photo-frame</title>
 	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="xxx">
-	<meta name="keywords" content="xxx">
-
-	<meta property="og:title" content="xxx"/>
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="xxx">
-	<meta property="og:image" content="xxx">
-	<meta property="og:site_name" content="xxx">
-	<meta property="og:description" content="xxx">
-
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@xxx">
-	<meta name="twitter:title" content="xxx">
-	<meta name="twitter:description" content="xxx">
-	<meta name="twitter:image" content="xxx">
-
-	<!--<link rel="shortcut icon" href="/favicon.ico"/>-->
 	<link type="text/css" rel="stylesheet" href="./css/app.css"/>
 
-	<script src="https://www.promisejs.org/polyfills/promise-6.1.0.min.js"></script>
-	<script src="//twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
 
 </head>
 <body>
 <h1>js-photo-frame</h1>
+
+<div class="view">
+	<video id="camera" width="640" height="480" muted playsinline></video>
+	<canvas id="frame" width="640" height="480"></canvas>
+</div>
+<div>
+	<button id="btn" type="button">Shoot</button>
+</div>
+<canvas id="tmp" width="640" height="480"></canvas>
+
+<a id="link" href="#">ダウンロード</a>
 
 <script src="./js/app.js"></script>
 </body>
